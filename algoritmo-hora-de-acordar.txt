@@ -1,0 +1,50 @@
+ALGORITMO DA HORA DE ACORDAR
+
+Quando o despertador toca, eu vejo se consegui abrir os olhos. Se ainda estiver
+com os olhos fechados, continuo dormindo e tento acordar de novo. Quando abro os
+olhos, escolho se vou levantar ou dormir mais um pouco.
+
+Pseudocódigo em Portugol:
+
+algoritmo "hora_de_acordar"
+var
+   respostaOlhos, respostaLevantar: inteiro
+   levantou: logico
+inicio
+   levantou <- falso
+
+   escreval("O despertador tocou.")
+
+   enquanto levantou = falso faca
+      escreva("Abri os olhos? (1 para sim e 0 para não): ")
+      leia(respostaOlhos)
+
+      se respostaOlhos = 0 entao
+         escreval("Vou continuar dormindo.")
+      senao
+         escreva("Vou levantar? (1 para sim e 0 para não): ")
+         leia(respostaLevantar)
+
+         se respostaLevantar = 1 entao
+            levantou <- verdadeiro
+         senao
+            escreval("Vou dormir mais um pouco.")
+         fimse
+      fimse
+   fimenquanto
+
+   escreval("Sentei na cama.")
+   escreval("Coloquei os pés no chão.")
+   escreval("Desliguei o despertador e levantei.")
+   escreval("Lavei o rosto e comecei o meu dia.")
+fimalgoritmo
+
+Passo a passo:
+
+1. O despertador toca.
+2. Eu verifico se abri os olhos.
+3. Se não abri, continuo dormindo e tento acordar novamente.
+4. Se abri, decido se vou levantar.
+5. Se eu escolher dormir, o processo volta para a verificação dos olhos.
+6. Se eu escolher levantar, sento na cama e coloco os pés no chão.
+7. Desligo o despertador, levanto, lavo o rosto e começo o dia.
